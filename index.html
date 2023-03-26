@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo-n-link-container">
+        <div class="menu-n-logo-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="menu"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          <img src="./images/logo.svg" alt="" />
+        </div>
+
+        <ul class="close-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="close"
+          >
+            <path
+              d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"
+            />
+          </svg>
+
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="cart-n-profile-container">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="cart"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+          />
+        </svg>
+        <span class="items-in-cart">0</span>
+        <div class="profile">
+          <img src="./images/image-avatar.png" alt="" />
+        </div>
+      </div>
+      <div class="selected-cart toggle">
+        <p class="title">Cart</p>
+        <div class="cart-content">
+          <div class="product-pic"></div>
+          <div class="product-detail">
+            <p class="product-title">Fall Limited Edition Sneakers</p>
+            <div class="span">
+              <span class="product-num">$125.00 x </span>
+              <span class="num-item">3</span>
+              <span class="total-price">$125.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart-btn">Check out</div>
+      </div>
+    </nav>
+
+    <!-- Section -->
+    <section>
+      <div class="section-container">
+        <div class="left-section">
+          <div class="big"></div>
+          <div class="sm pic1">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+          </div>
+          <div class="sm pic2">
+            <img src="./images/image-product-2-thumbnail.jpg" alt="" />
+          </div>
+          <div class="sm pic3">
+            <img src="./images/image-product-3-thumbnail.jpg" alt="" />
+          </div>
+          <div class="sm pic4">
+            <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+          </div>
+        </div>
+        <div class="right-section">
+          <h5>sneaker company</h5>
+          <h1>
+            Fall Limited Edition <br />
+            Sneakers
+          </h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+            labore, harum dolor porro praesentium neque nam voluptas cum quod.
+            Nisi fugiat necessitatibus a recusandae vitae ipsa quo repellendus
+            accusamus
+          </p>
+          <div class="price">
+            <div class="price-container">
+              <h2>$ <span class="current-price">125</span></h2>
+              <h3>50%</h3>
+            </div>
+            <h4>$250.00</h4>
+          </div>
+          <div class="add-panel">
+            <div class="add-container">
+              <span class="add-sub minus">-</span>
+              <span class="num">0</span>
+              <span class="add-sub add">+</span>
+            </div>
+            <div class="btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="btn-cart"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+              <span class="button">Add to cart</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
